@@ -114,12 +114,13 @@ st.markdown("""
     }
     
     .main{
-             background-color: #1a2331;
+        background-color: #1a2331;
     }
     
   #news-classification,#about-the-news-prediction-application,#enter-your-news-below-and-click-submit-to-predict-its-category{
-            color:#ddd6d6;
-            }
+         color:#ddd6d6;
+    }
+
     #news-classification{
             text-decoration:underline;
            
@@ -141,11 +142,15 @@ st.markdown("""
     }
     [data-testid="stMarkdownContainer"],[data-testid="stCaptionContainer"]{
     color: white; 
+    font-size:25px;
             
 }
  .st-bx{
      background-color :#e2e1e9;
+     color:black;
+    font-size:20px;
             }
+            
 </style>
           
 """, unsafe_allow_html=True)
