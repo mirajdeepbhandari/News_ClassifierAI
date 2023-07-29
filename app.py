@@ -106,6 +106,7 @@ st.markdown("""
         font-style: italic; /* Italic font */
         font-size: 16px;
         line-height:40px;
+        color:#F0F2F6;
     }
             
 </style>
