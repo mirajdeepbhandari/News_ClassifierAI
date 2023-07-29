@@ -9,7 +9,7 @@ import streamlit as st
 
 # Set the page title and header
 st.title('News Classification')
-st.header('About the News Prediction Application')
+st.header('About the News Prediction Application:')
 
 # Provide information about the application using Markdown
 st.markdown("""
@@ -55,9 +55,13 @@ def predict_category(model, txt):
 # Load the model
 model = load_data_and_train_model()
 
+
 # Custom CSS to enhance the design
 st.markdown("""
 <style>
+    body {
+        background-color: #f6f8fa; /* GitHub background color */
+    }
     .stButton button {
         background-color: #0059b3;
         color: white;
@@ -99,23 +103,56 @@ st.markdown("""
    
            
     .explanation-container {
-        background-color: #262730; /* Custom background color */
+        background-color: #e9e7e7; 
         padding: 15px;
         border-radius: 10px;
         font-family: "Roboto", sans-serif; /* Custom font */
         font-style: italic; /* Italic font */
         font-size: 16px;
         line-height:40px;
-        color:#F0F2F6;
+        color:black;
     }
+    
+    .main{
+             background-color: #1a2331;
+    }
+    
+  #news-classification,#about-the-news-prediction-application,#enter-your-news-below-and-click-submit-to-predict-its-category{
+            color:#ddd6d6;
+            }
+    #news-classification{
+            text-decoration:underline;
+           
+            }
+    
+    #MainMenu{
+            visibility:hidden;
+            }
+    footer{
             
+         visibility:hidden;   
+    }
+    header{
+         visibility:hidden;    
+    }
+    
+    .css-1q7spjk e1nzilvr4{
+            color: white !important;
+    }
+    [data-testid="stMarkdownContainer"],[data-testid="stCaptionContainer"]{
+    color: white; 
+            
+}
+ .st-bx{
+     background-color :#e2e1e9;
+            }
 </style>
           
-</style>
 """, unsafe_allow_html=True)
 
+
 # Page title and heading with custom CSS
-st.header('Enter your news below and click "Submit" to predict its category.')
+st.header('Enter your news below and click "Submit" to predict its category')
 
 # Adding a container to wrap the app content with the custom background
 with st.container():
