@@ -55,7 +55,63 @@ def predict_category(model, txt):
 # Load the model
 model = load_data_and_train_model()
 
-
+# Custom CSS to enhance the design
+st.markdown("""
+<style>
+    .stButton button {
+        background-color: #0059b3;
+        color: white;
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+            
+    .stButton button:hover {
+        background-color: black;
+        color:white;
+    }
+    
+    .stTextInput textarea {
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 18px;
+        line-height: 1.6;
+        padding: 12px;
+        border-radius: 5px;
+        border: 2px solid #0059b3;
+        resize: none; /* Disable textarea resizing */
+    }
+    
+    .stSuccess {
+        color: #008000;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .stWarning {
+        color: #ff0000;
+        font-size: 18px;
+        font-weight: bold;
+    }
+   
+           
+    .explanation-container {
+        background-color: #262730; /* Custom background color */
+        padding: 15px;
+        border-radius: 10px;
+        font-family: "Roboto", sans-serif; /* Custom font */
+        font-style: italic; /* Italic font */
+        font-size: 16px;
+        line-height:40px;
+    }
+            
+</style>
+          
+</style>
+""", unsafe_allow_html=True)
 
 # Page title and heading with custom CSS
 st.header('Enter your news below and click "Submit" to predict its category.')
